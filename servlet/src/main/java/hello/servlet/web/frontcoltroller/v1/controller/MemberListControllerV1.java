@@ -1,7 +1,8 @@
-package hello.servlet.web.frontcoltroller.v1;
+package hello.servlet.web.frontcoltroller.v1.controller;
 
 import hello.servlet.domain.Member;
 import hello.servlet.domain.MemberRepository;
+import hello.servlet.web.frontcoltroller.v1.ControllerV1;
 import java.io.IOException;
 import java.util.List;
 import javax.servlet.RequestDispatcher;

@@ -1,9 +1,8 @@
 package hello.servlet.web.frontcoltroller.v2;
 
-import hello.servlet.web.frontcoltroller.v1.ControllerV1;
-import hello.servlet.web.frontcoltroller.v1.MemberFormControllerV1;
-import hello.servlet.web.frontcoltroller.v1.MemberListControllerV1;
-import hello.servlet.web.frontcoltroller.v1.MemberSaveControllerV1;
+import hello.servlet.web.frontcoltroller.v2.controller.MemberFormControllerV2;
+import hello.servlet.web.frontcoltroller.v2.controller.MemberListControllerV2;
+import hello.servlet.web.frontcoltroller.v2.controller.MemberSaveControllerV2;
 import hello.servlet.web.frontcoltroller.view.MyView;
 import java.io.IOException;
 import java.util.HashMap;

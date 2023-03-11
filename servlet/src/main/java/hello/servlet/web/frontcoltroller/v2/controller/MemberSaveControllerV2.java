@@ -1,11 +1,10 @@
-package hello.servlet.web.frontcoltroller.v2;
+package hello.servlet.web.frontcoltroller.v2.controller;
 
 import hello.servlet.domain.Member;
 import hello.servlet.domain.MemberRepository;
+import hello.servlet.web.frontcoltroller.v2.ControllerV2;
 import hello.servlet.web.frontcoltroller.view.MyView;
-import hello.servlet.web.frontcoltroller.view.MyViewJsp;
 import java.io.IOException;
-import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -27,6 +26,6 @@ public class MemberSaveControllerV2 implements ControllerV2 {
         request.setAttribute("member", member);
 
         String viewPath = "/WEB-INF/views/save-result.jsp";
-        return new MyViewJsp(viewPath);
+        return new MyView(viewPath);
     }
 }

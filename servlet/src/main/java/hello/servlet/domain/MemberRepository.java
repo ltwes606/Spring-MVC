@@ -8,16 +8,15 @@ import java.util.Map;
 // 동시성 문제가 고려되지 않은 저장소
 public class MemberRepository {
 
+    private static final MemberRepository instance = new MemberRepository();
     private static Map<Long, Member> store = new HashMap<>();
     private static Long sequence = 0L;
 
-    private static final MemberRepository instance = new MemberRepository();
+    private MemberRepository() {
+    }
 
     public static MemberRepository getInstance() {
         return instance;
-    }
-
-    private MemberRepository() {
     }
 
     public Member save(Member member) {
