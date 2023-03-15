@@ -19,7 +19,7 @@ public class SpringMemberListControllerV1 {
         List<Member> members = memberRepository.findAll();
 
         ModelAndView mv = new ModelAndView("members");
-        mv.addObject("members", members);
+        mv.addObject("members" , members);
         return mv;
     }
 }
