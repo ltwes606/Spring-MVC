@@ -76,7 +76,7 @@ public class MappingController {
      * @params="mode!=debug" (! =) mode 파라미터가 존재하지 않을 경우도 true,
      * @params = {"mode=debug","data=good"} AND 연산
      */
-    @GetMapping(value = "/mapping-param", params = {"mode", "mode!=debug"})
+    @GetMapping(value = "/mapping-param", params = "mode=debug")
     public String mappingParam() {
         log.info("mappingParam");
         return "ok";
